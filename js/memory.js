@@ -1,28 +1,28 @@
 let arrayAnimali = [
-  "🐱",
-  "🦉",
-  "🐾",
-  "🦁",
-  "🦋",
-  "🐛",
-  "🐝",
-  "🐬",
-  "🦊",
-  "🐨",
-  "🐰",
-  "🐯",
-  "🐱",
-  "🦉",
-  "🐾",
-  "🦁",
-  "🦋",
-  "🐛",
-  "🐝",
-  "🐬",
-  "🦊",
-  "🐨",
-  "🐯",
-  "🐰",
+ '<img src = "../img/beta.png">',
+ '<img src = "../img/beta.png">',
+ '<img src = "../img/antoniero.png">',
+ '<img src = "../img/antoniero.png">',
+ '<img src = "../img/diego.png">',
+ '<img src = "../img/diego.png">',
+ '<img src = "../img/gaucho.png">',
+ '<img src = "../img/gaucho.png">',
+ '<img src = "../img/gnatteo.png">',
+ '<img src = "../img/gnatteo.png">',
+ '<img src = "../img/izzi.png">',
+ '<img src = "../img/izzi.png">',
+ '<img src = "../img/paso.png">',
+ '<img src = "../img/paso.png">',
+ '<img src = "../img/pietro.png">',
+ '<img src = "../img/pietro.png">',
+ '<img src = "../img/sandro.jpg">',
+ '<img src = "../img/sandro.jpg">',
+ '<img src = "../img/stefano.png">',
+ '<img src = "../img/stefano.png">',
+ '<img src = "../img/sglatania.png">',
+ '<img src = "../img/sglatania.png">',
+ '<img src = "../img/teo.png">',
+ '<img src = "../img/teo.png">',
 ];
 //libreria per icone
 //https://html-css-js.com/html/character-codes/
@@ -76,7 +76,7 @@ function startGame() {
   griglia.innerHTML = '';
   
 
-  for (i = 0; i < 24; i++) {
+  for (i = 0; i < arrayShuffle.length; i++) {
     var div = document.createElement("div");
     var element = document.createElement("div");
 
@@ -165,7 +165,7 @@ function startTimer() {
 //una funzione che viene mostrata alla fine quando sono tutte le risposte esatte
 
 function modal() {
-    if (iconsFind.length == 2) {
+    if (iconsFind.length == 24) {
         clearInterval(interval);
         modal.classList.add('active')
         document.getElementById('tempoTrascorso').innerHTML = timer.innerHTML;
